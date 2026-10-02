@@ -5,3 +5,5 @@ it is hoped that it will go viral before 90 days.
 The current project is aimed at taking my personal journey from linux, to git and github, Docker, Docker Compose, CI/CD Pipelining, and Kubernetes.
 Walk and work with me as we trail these technologies.
 
+Added some information to test whether the privacy issue works.
+Turned repo to private.
