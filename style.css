@@ -1,0 +1,28 @@
+:root{--ink:#14103a;--gold:#ffb627;--paper:#fff8ec;--coral:#ff5d73;--line:#d9d2c3}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;line-height:1.5}
+.wrap{max-width:1040px;margin:0 auto;padding:32px 20px 56px;display:grid;gap:36px;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start}
+h1{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.05;margin:0 0 12px;letter-spacing:.01em}
+.lead{margin:0 0 24px;max-width:46ch}
+label{display:block;font-weight:700;margin:18px 0 6px}
+input[type=text],input[type=file]{width:100%;padding:12px 14px;font:inherit;border:2px solid var(--ink);border-radius:8px;background:#fff}
+input[type=range]{width:100%;accent-color:var(--ink)}
+.zoom label{margin-top:14px}
+.msg{min-height:1.5em;color:#b3123a;font-weight:500;margin:14px 0 4px}
+.btn{display:inline-block;font:inherit;font-weight:700;text-align:center;text-decoration:none;cursor:pointer;color:var(--ink);background:#fff;border:2px solid var(--ink);border-radius:8px;padding:12px 18px;width:100%}
+.btn:hover{background:var(--gold)}
+.btn:focus-visible,input:focus-visible{outline:3px solid var(--coral);outline-offset:2px}
+.primary{background:var(--ink);color:#fff;font-size:1.1rem;padding:16px}
+.primary:hover{background:#2a2275;color:#fff}
+.actions{margin-top:20px;display:grid;gap:10px}
+.social{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.social .btn{padding:12px 6px}
+.wa{background:#25d366;border-color:#128c4a}.fb{background:#1877f2;border-color:#0f4fa8;color:#fff}.ig{background:#e1306c;border-color:#a21f4d;color:#fff}
+.wa:hover{background:#1fb858}.fb:hover{background:#1568d3}.ig:hover{background:#c42559}
+.join{background:var(--gold);font-size:1.1rem;padding:16px;margin-top:6px}
+.join:hover{background:#ffc94d}
+.hint{margin:0;font-size:.9rem;min-height:1.3em}
+.preview{position:sticky;top:20px}
+canvas{display:block;width:100%;height:auto;border-radius:10px;border:2px solid var(--ink);background:#fff;box-shadow:8px 8px 0 var(--ink)}
+@media(max-width:780px){.wrap{grid-template-columns:1fr}.preview{position:static;order:-1}}
+@media(prefers-reduced-motion:no-preference){.btn{transition:background .15s}}

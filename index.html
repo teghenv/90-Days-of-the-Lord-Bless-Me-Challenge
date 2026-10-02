@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>90 DAYS CHALLENGE</title>
+<meta name="description" content="Add your name and photo to create your personal challenge flyer, then download and share it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <section class="panel">
+    <h1>90 DAYS CHALLENGE</h1>
+    <h3 class="lead">Declare God's Blessings over your Life & Family for 90 DAYS! .... Thousands are ALREADY DOINT IT!</h3>
+    </p>
+      <p >Add your name and a photo. Your flyer is ready in seconds, free to download and share.</p>
+
+    <label for="name">Your name</label>
+    <input id="name" type="text" maxlength="30" placeholder="e.g. Amara Johnson" autocomplete="name">
+
+    <label for="photo">Your photo</label>
+    <input id="photo" type="file" accept="image/*">
+
+    <div id="zoomRow" class="zoom" hidden>
+      <label for="zoom">Zoom photo</label>
+      <input id="zoom" type="range" min="1" max="4" step="0.1" value="1">
+    </div>
+
+    <p id="msg" class="msg" role="alert"></p>
+
+    <button id="generate" class="btn primary" type="button">Generate my flyer</button>
+
+    <div id="actions" class="actions" hidden>
+      <button id="download" class="btn" type="button">Download PNG</button>
+      <button id="share" class="btn" type="button">Share flyer</button>
+      <div class="social">
+        <button id="wa" class="btn wa" type="button">WhatsApp</button>
+        <button id="fb" class="btn fb" type="button">Facebook</button>
+        <button id="ig" class="btn ig" type="button">Instagram</button>
+      </div>
+      <p class="hint" id="hint"></p>
+      <a id="join" class="btn join" href="#" target="_blank" rel="noopener">Join the challenge</a>
+    </div>
+  </section>
+
+  <section class="preview">
+    <canvas id="canvas" width="1024" height="1350" aria-label="Your flyer preview"></canvas>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
